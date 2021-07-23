@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./override";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+@layer components {
+  .coloured-logo {
+    @apply font-semibold bg-clip-text text-transparent bg-gradient-to-r from-palette-primary to-palette-secondary;
+  }
+  .nav-link-0 {
+    @apply text-palette-black font-semibold hover:text-palette-primary hover:underline mt-3 sm:mx-3 sm:mt-0;
+  }
+  .SlickSlider {
+    @apply bg-gray-100;
+    height: 400px;
+  }
+  .SlickSlider .slick-slide {
+    @apply flex justify-center items-center;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}

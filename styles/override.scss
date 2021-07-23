@@ -1,0 +1,23 @@
+.SlickSlider {
+  .slider-arrow {
+    width: 32px;
+    height: 40px;
+    &::before {
+      display: none;
+    }
+  }
+
+  .slick-prev {
+    left: 16px;
+    z-index: 1;
+  }
+
+  .slick-next {
+    right: 16px;
+    z-index: 1;
+  }
+
+  .slick-dots li button:before {
+    font-size: 16px;
+  }
+}

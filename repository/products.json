@@ -1,0 +1,231 @@
+[
+  {
+    "id": 1,
+    "name": "Tara white work ready kurta dress",
+    "category": "womens",
+    "image": "/assets/product_images/women_1.jpeg",
+    "images": [
+      "/assets/product_images/women_1.jpeg",
+      "/assets/product_images/women_2.jpeg"
+    ],
+    "price": 1299,
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "name": "Mellow-linen top green",
+    "category": "womens",
+    "image": "/assets/product_images/women_2.jpeg",
+    "images": [
+      "/assets/product_images/women_2.jpeg",
+      "/assets/product_images/women_1.jpeg"
+    ],
+    "price": 1990,
+    "stock": 10
+  },
+  {
+    "id": 13,
+    "name": "Orange Printed T-Shirt",
+    "category": "mens",
+    "image": "/assets/product_images/mens_6.jpeg",
+    "images": [
+      "/assets/product_images/mens_6.jpeg",
+      "/assets/product_images/mens_2.jpeg"
+    ],
+    "price": 849,
+    "stock": 10
+  },
+  {
+    "id": 14,
+    "name": "Navy Blue Printed Romper with Hairband (Set of 2)",
+    "category": "kids",
+    "image": "/assets/product_images/kids_1.jpeg",
+    "images": [
+      "/assets/product_images/kids_1.jpeg",
+      "/assets/product_images/kids_2.jpeg"
+    ],
+    "price": 1199,
+    "stock": 10
+  },
+  {
+    "id": 3,
+    "name": "Pink Printed Dress",
+    "category": "womens",
+    "image": "/assets/product_images/women_3.jpeg",
+    "images": [
+      "/assets/product_images/women_3.jpeg",
+      "/assets/product_images/women_4.jpeg"
+    ],
+    "price": 2499,
+    "stock": 10
+  },
+  {
+    "id": 4,
+    "name": "Mustard Daffodil Dress",
+    "category": "womens",
+    "image": "/assets/product_images/women_4.jpeg",
+    "images": [
+      "/assets/product_images/women_4.jpeg",
+      "/assets/product_images/women_3.jpeg"
+    ],
+    "price": 1699,
+    "stock": 10
+  },
+  {
+    "id": 5,
+    "name": "Red Floral Dress",
+    "category": "womens",
+    "image": "/assets/product_images/women_5.jpeg",
+    "images": [
+      "/assets/product_images/women_5.jpeg",
+      "/assets/product_images/women_6.jpeg"
+    ],
+    "price": 1999,
+    "stock": 10
+  },
+  {
+    "id": 16,
+    "name": "Organic Cotton Bodysuits For Baby Orange",
+    "category": "kids",
+    "image": "/assets/product_images/kids_3.jpeg",
+    "images": [
+      "/assets/product_images/kids_3.jpeg",
+      "/assets/product_images/kids_2.jpeg"
+    ],
+    "price": 1499,
+    "stock": 10
+  },
+  {
+    "id": 6,
+    "name": "Peach Printed Dress",
+    "category": "womens",
+    "image": "/assets/product_images/women_6.jpeg",
+    "images": [
+      "/assets/product_images/women_6.jpeg",
+      "/assets/product_images/women_5.jpeg"
+    ],
+    "price": 2199,
+    "stock": 10
+  },
+  {
+    "id": 7,
+    "name": "Sevya Solid Dress With Dupatta",
+    "category": "womens",
+    "image": "/assets/product_images/women_7.jpeg",
+    "images": [
+      "/assets/product_images/women_7.jpeg",
+      "/assets/product_images/women_2.jpeg"
+    ],
+    "price": 3499,
+    "stock": 10
+  },
+  {
+    "id": 8,
+    "name": "Green Solid T-Shirt",
+    "category": "mens",
+    "image": "/assets/product_images/mens_1.jpeg",
+    "images": [
+      "/assets/product_images/mens_1.jpeg",
+      "/assets/product_images/mens_2.jpeg"
+    ],
+    "price": 999,
+    "stock": 10
+  },
+  {
+    "id": 9,
+    "name": "Men's Yellow Colourblock T-shirt",
+    "category": "mens",
+    "image": "/assets/product_images/mens_2.jpeg",
+    "images": [
+      "/assets/product_images/mens_2.jpeg",
+      "/assets/product_images/mens_1.jpeg"
+    ],
+    "price": 999,
+    "stock": 10
+  },
+  {
+    "id": 10,
+    "name": "Messagepink-slim fit t shirt",
+    "category": "mens",
+    "image": "/assets/product_images/mens_3.jpeg",
+    "images": [
+      "/assets/product_images/mens_3.jpeg",
+      "/assets/product_images/mens_4.jpeg"
+    ],
+    "price": 1099,
+    "stock": 10
+  },
+  {
+    "id": 11,
+    "name": "Grey Cut And Sew Panel Brand Print T-Shirt",
+    "category": "mens",
+    "image": "/assets/product_images/mens_4.jpeg",
+    "images": [
+      "/assets/product_images/mens_4.jpeg",
+      "/assets/product_images/mens_3.jpeg"
+    ],
+    "price": 949,
+    "stock": 10
+  },
+  {
+    "id": 12,
+    "name": "Navy Quick Dry Soft Gym T-Shirt",
+    "category": "mens",
+    "image": "/assets/product_images/mens_5.jpeg",
+    "images": [
+      "/assets/product_images/mens_5.jpeg",
+      "/assets/product_images/mens_4.jpeg"
+    ],
+    "price": 899,
+    "stock": 10
+  },
+  {
+    "id": 15,
+    "name": "Organic Cotton Bodysuits For Baby",
+    "category": "kids",
+    "image": "/assets/product_images/kids_2.jpeg",
+    "images": [
+      "/assets/product_images/kids_2.jpeg",
+      "/assets/product_images/kids_3.jpeg"
+    ],
+    "price": 599,
+    "stock": 10
+  },
+
+  {
+    "id": 17,
+    "name": "Oxyfit Gray Shoes",
+    "category": "kids",
+    "image": "/assets/product_images/kids_4.jpeg",
+    "images": [
+      "/assets/product_images/kids_4.jpeg",
+      "/assets/product_images/kids_5.jpeg"
+    ],
+    "price": 499,
+    "stock": 10
+  },
+  {
+    "id": 18,
+    "name": "Black Wi Ps Ck Sneakers",
+    "category": "kids",
+    "image": "/assets/product_images/kids_5.jpeg",
+    "images": [
+      "/assets/product_images/kids_5.jpeg",
+      "/assets/product_images/kids_2.jpeg"
+    ],
+    "price": 999,
+    "stock": 10
+  },
+  {
+    "id": 19,
+    "name": "Croc Band Pink Kids Sandal",
+    "category": "kids",
+    "image": "/assets/product_images/kids_6.jpeg",
+    "images": [
+      "/assets/product_images/kids_6.jpeg",
+      "/assets/product_images/kids_4.jpeg"
+    ],
+    "price": 1999,
+    "stock": 10
+  }
+]
