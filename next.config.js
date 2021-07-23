@@ -3,6 +3,9 @@ module.exports = {
   images: {
     domains: ["placeimg.com", "tailwindcss.com", "images.unsplash.com"],
   },
+  devIndicators: {
+    buildActivity: false,
+  },
   env: {
     siteTitle: "Fashion Store",
     siteDescription: "Get your fashion list checked",

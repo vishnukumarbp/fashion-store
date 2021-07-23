@@ -11,6 +11,7 @@
     "@reduxjs/toolkit": "^1.6.1",
     "faker": "^5.5.3",
     "next": "latest",
+    "nprogress": "^0.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",
