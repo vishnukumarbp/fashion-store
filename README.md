@@ -1,3 +1,36 @@
 # fashion-store
 
-Creating fashion based ecommerce application using NextJS
+Fashion based ecommerce application using NextJS
+
+
+## Test Locally
+
+To test locally pull the repo locally, and run the following commands
+
+## Installation
+
+Use the package manager [npm](https://www.npmjs.com/) to install npm modules.
+
+```javascript
+npm install
+```
+
+## Start the development server
+
+To start the development server locally, run the following commands
+
+```javascript
+npm run dev
+```
+
+## Create Production build
+
+To create production build, run the following commands
+
+```javascript
+npm run build
+```
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
