@@ -2,12 +2,7 @@ import { useRouter } from "next/router";
 import { useDispatch } from "react-redux";
 import { ROUTES } from "../constants";
 import { addToCart } from "../redux/cart.slice";
-import {
-  getFakeImageUrl,
-  getFakePrice,
-  getFakeProductName,
-  getLocalPrice,
-} from "../utils";
+import { getFakeImageUrl, getFakePrice, getFakeProductName } from "../utils";
 import AddToCartButton from "./AddToCartButton";
 import BuyNowButton from "./BuyNowButton";
 import FavButton from "./FavButton";
@@ -16,7 +11,10 @@ import Price from "./Price";
 function ProductCard({ product = {} }) {
   const dispatch = useDispatch();
   const history = useRouter();
-  const addToCartAction = () => dispatch(addToCart(product));
+  const addToCartAction = (event) => {
+    event.stopPropagation();
+    dispatch(addToCart(product));
+  };
 
   return (
     <div
