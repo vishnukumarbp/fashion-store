@@ -6,8 +6,11 @@ class IndexedData {
   static startIndexing() {
     productData.forEach((product) => {
       IndexedData.indexedData[product.id] =
-        `${product.name} ${product.category} ${product.price}`.toLowerCase();
+        `${product.name} ${product.category} ${product.price}`
+          .replace(/(^[AZaz09]|[-])*/g, "")
+          .toLowerCase();
     });
+    console.log(IndexedData.indexedData);
   }
 }
 

@@ -1,7 +1,11 @@
 import faker from "faker";
+import { useRouter } from "next/router";
 import { ArrowRightIcon } from "@heroicons/react/outline";
+import { ROUTES } from "../constants";
 
 function CategoryBlock() {
+  const history = useRouter();
+
   return (
     <div className="container mx-auto px-6 my-10">
       <div
@@ -18,7 +22,10 @@ function CategoryBlock() {
             <p className="mt-2 text-gray-400">
               {faker.commerce.productAdjective()}
             </p>
-            <button className="flex items-center mt-4 px-3 py-2 bg-palette-secondary text-palette-white text-sm uppercase font-medium rounded hover:bg-palette-secondary focus:outline-none focus:bg-palette-secondary">
+            <button
+              className="flex items-center mt-4 px-3 py-2 bg-palette-secondary text-palette-white text-sm uppercase font-medium rounded hover:bg-palette-secondary focus:outline-none focus:bg-palette-secondary"
+              onClick={() => history.push(ROUTES.category("womens"))}
+            >
               <span>Shop Now</span>
               <ArrowRightIcon className="h-5 w-5 mx-2" />
             </button>
@@ -40,7 +47,10 @@ function CategoryBlock() {
               <p className="mt-2 text-gray-400">
                 {faker.commerce.productAdjective()}
               </p>
-              <button className="flex items-center mt-4 text-palette-white text-sm uppercase font-medium rounded hover:underline focus:outline-none">
+              <button
+                className="flex items-center mt-4 text-palette-white text-sm uppercase font-medium rounded hover:underline focus:outline-none"
+                onClick={() => history.push(ROUTES.category("mens"))}
+              >
                 <span>Shop Now</span>
                 <ArrowRightIcon className="h-5 w-5 mx-2" />
               </button>
@@ -61,7 +71,10 @@ function CategoryBlock() {
               <p className="mt-2 text-gray-400">
                 {faker.commerce.productAdjective()}
               </p>
-              <button className="flex items-center mt-4 text-palette-white text-sm uppercase font-medium rounded hover:underline focus:outline-none">
+              <button
+                className="flex items-center mt-4 text-palette-white text-sm uppercase font-medium rounded hover:underline focus:outline-none"
+                onClick={() => history.push(ROUTES.category("kids"))}
+              >
                 <span>Shop Now</span>
                 <ArrowRightIcon className="h-5 w-5 mx-2" />
               </button>

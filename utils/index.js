@@ -35,7 +35,10 @@ export const getMatchingProductIds = async (keyword) => {
   }
   for (let id in IndexedData.indexedData) {
     const data = IndexedData.indexedData[id];
-    if (typeof data === "string" && data.search(keyword) !== -1) {
+    if (
+      typeof data === "string" &&
+      data.search((keyword || "").toLowerCase()) !== -1
+    ) {
       ids.push(id);
     }
   }
