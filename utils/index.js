@@ -11,7 +11,10 @@ export const getDiscountedPrice = (price, discount = 0) => {
   if (isNaN(discount) || isNaN(price)) {
     return price;
   }
-  return (Math.round(((100 - discount) * price) / 100) + 0.99).toFixed(2);
+  if (discount === 0) {
+    return price;
+  }
+  return (Math.round(((100 - discount) * price) / 100) - 0.01).toFixed(2);
 };
 
 export const getCartSubTotal = (cart = []) => {
@@ -28,9 +31,7 @@ export const getCartSubTotal = (cart = []) => {
   }
 };
 
-export const toFixedLen = (number, len = 2) => {
-  String(number).toFixed(len);
-};
+export const toFixedLen = (number, len = 2) => parseFloat(number).toFixed(len);
 
 export const getMatchingProductIds = async (keyword) => {
   const ids = [];

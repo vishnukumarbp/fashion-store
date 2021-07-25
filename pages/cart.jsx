@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useRouter } from "next/router";
 import ListPageHeader from "../components/ListPageHeader";
 import { TrashIcon } from "@heroicons/react/outline";
-import { getCartSubTotal, getLocalPrice } from "../utils";
+import { getCartSubTotal, getLocalPrice, toFixedLen } from "../utils";
 import BackToProductButton from "../components/BackToProductButton";
 import Price from "../components/Price";
 import { ROUTES } from "../constants";

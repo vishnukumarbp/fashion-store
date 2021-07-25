@@ -1,7 +1,25 @@
 import IndexedData from "../repository/indexedData";
-import { getCartSubTotal, getMatchingProductIds } from "../utils";
+import {
+  getDiscountedPrice,
+  getCartSubTotal,
+  getMatchingProductIds,
+} from "../utils";
 
 describe("Utils => Utility functions", () => {
+  describe("Utils => getDiscountedPrice", () => {
+    it("Should return original price if price/discount is not an number", () => {
+      expect(getDiscountedPrice("abc", "xyz")).toEqual("abc");
+    });
+
+    it("Should return original price if discount is 0", () => {
+      expect(getDiscountedPrice(1000)).toEqual(1000);
+    });
+
+    it("Should return price after applying discount", () => {
+      const discountedPrice = getDiscountedPrice(2000, 10);
+      expect(discountedPrice).toEqual("1799.99");
+    });
+  });
   describe("Utils => getCartSubTotal", () => {
     it("Should return 0 if no items in the cart", () => {
       expect(getCartSubTotal([])).toEqual(0);
