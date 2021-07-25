@@ -11,7 +11,6 @@ import store from "../redux/store";
 import NProgress from "nprogress";
 
 Router.events.on("routeChangeStart", (url) => {
-  console.log(`Loading: ${url}`);
   NProgress.start();
 });
 Router.events.on("routeChangeComplete", () => NProgress.done());
@@ -24,7 +23,7 @@ function App({ Component, pageProps }) {
       <Provider store={store}>
         <div className="relative min-h-screen">
           <Header />
-          <Component {...pageProps} />
+          {Component && <Component {...pageProps} />}
           <Footer />
         </div>
       </Provider>

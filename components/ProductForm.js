@@ -9,7 +9,6 @@ function ProductForm({ product }) {
   const [quantity, setQuantity] = useState(1);
   const dispatch = useDispatch();
   const addToCartAction = () => {
-    console.log(quantity, product);
     dispatch(addToCart({ ...product, qty: quantity }));
   };
 

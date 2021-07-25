@@ -28,7 +28,6 @@ export default ShopPage;
 
 export async function getServerSideProps(ctx) {
   const searchKeyWord = ctx.query.q;
-  console.log(searchKeyWord);
   const productIds = await getMatchingProductIds(searchKeyWord);
   const products = await productsObject.getProductsById(productIds);
   return { props: { products: products, keyword: searchKeyWord } };

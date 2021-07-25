@@ -10,7 +10,6 @@ class IndexedData {
           .replace(/(^[AZaz09]|[-])*/g, "")
           .toLowerCase();
     });
-    console.log(IndexedData.indexedData);
   }
 }
 

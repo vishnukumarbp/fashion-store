@@ -1,5 +1,5 @@
 import faker from "faker";
-import { getdDiscountedPrice } from "../utils";
+import { getDiscountedPrice } from "../utils";
 
 function Product(json) {
   const discount = faker.datatype.number({ min: 10, max: 50 });
@@ -11,7 +11,7 @@ function Product(json) {
   this.stock = json.stock;
   this.price = json.price;
   this.discount = discount;
-  this.discountedPrice = getdDiscountedPrice(json.price, discount);
+  this.discountedPrice = getDiscountedPrice(json.price, discount);
   this.description = faker.commerce.productDescription();
 }
 

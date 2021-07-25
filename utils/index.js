@@ -7,14 +7,14 @@ export const getFakePrice = () => faker.commerce.price(1000, 1500);
 export const getFakeImageUrl = () => faker.image.imageUrl();
 
 export const getLocalPrice = (price) => CURRENCY + " " + price;
-export const getdDiscountedPrice = (price, discount = 0) => {
+export const getDiscountedPrice = (price, discount = 0) => {
   if (isNaN(discount) || isNaN(price)) {
     return price;
   }
   return (Math.round(((100 - discount) * price) / 100) + 0.99).toFixed(2);
 };
 
-export const getCartSubTotal = (cart) => {
+export const getCartSubTotal = (cart = []) => {
   if (cart.length === 0) {
     return 0;
   } else {
@@ -24,8 +24,12 @@ export const getCartSubTotal = (cart) => {
         parseInt(item.qty) * parseFloat(item.discountedPrice || item.price),
       0
     );
-    return (Math.round(totalPrice * 100) / 100).toFixed(2);
+    return Math.round(totalPrice * 100) / 100;
   }
+};
+
+export const toFixedLen = (number, len = 2) => {
+  String(number).toFixed(len);
 };
 
 export const getMatchingProductIds = async (keyword) => {

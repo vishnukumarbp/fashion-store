@@ -17,6 +17,8 @@ const CartPage = () => {
   const dispatch = useDispatch();
   const history = useRouter();
 
+  const cartTotal = getLocalPrice(toFixedLen(getCartSubTotal(cart)));
+
   return (
     <div className="container mx-auto px-5 pb-28">
       {cart.length === 0 ? (
@@ -148,7 +150,7 @@ const CartPage = () => {
           <h2 className="my-5 text-right text-xl">
             Grand Total:{" "}
             <span className="font-semibold rounded-full bg-green-100 text-green-800">
-              {getLocalPrice(getCartSubTotal(cart))}
+              {cartTotal}
             </span>
           </h2>
         </>
